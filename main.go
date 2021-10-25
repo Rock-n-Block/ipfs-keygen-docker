@@ -43,7 +43,7 @@ func main() {
 	}
 	fmt.Fprintf(os.Stderr, "Key ID: %s\n", pid.Pretty())
         
-    privbytes, err := crypto.MarshalPrivateKey(priv)
+    	privbytes, err := crypto.MarshalPrivateKey(priv)
 	if err != nil {
 		fmt.Fprintln(os.Stderr, err)
                 os.Exit(1)
